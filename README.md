@@ -33,9 +33,9 @@ This project evaluates the accessibility of electric vehicle (EV) charging stati
 
 ## Results
 
-1. Distance map to nearest station (Estonia)
+1. Distance map to nearest station (Estonia) - 
 output/MB_dist_matrix.png
-2. Travel time map to nearest station (southeastern Estonia)
+2. Travel time map to nearest station (southeastern Estonia) - 
 output/MB_travel_time_se.png
 
 ## Full report

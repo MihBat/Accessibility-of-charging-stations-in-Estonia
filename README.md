@@ -19,7 +19,7 @@ This project evaluates the accessibility of electric vehicle (EV) charging stati
 2. **Speed raster preparation (R)** – `code/Batura_fproj2.R`  
    Builds a speed raster (m/min) based on road classes and rivers as barriers.  
 
-3. **Travel time calculation (Python)** – `code/Batura_fproj3.ipynb`  
+3. **Travel time calculation (Geopandas)** – `code/Batura_fproj3.ipynb`  
    Cost‑distance analysis using Dijkstra's algorithm (`MCP_Geometric`).
 
 4. **Final map (R)** – `code/Batura_fproj4.R`  

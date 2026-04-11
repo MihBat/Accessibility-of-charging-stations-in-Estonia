@@ -1,0 +1,7 @@
+﻿level,type,speed_km_h
+1,main road,90
+2,basic road,70
+3,connectivity road,50
+4,secondary road,50
+5,street road,30
+0,field,0.1

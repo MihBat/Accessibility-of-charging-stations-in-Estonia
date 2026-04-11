@@ -31,5 +31,13 @@ This project evaluates the accessibility of electric vehicle (EV) charging stati
 - **Python**: `rasterio`, `numpy`, `skimage.graph`, `geopandas`
 - **Data sources**: OpenChargeMap, Estonian Land Board, university course data
 
+## Results
+
+1. Distance map to nearest station (Estonia)
+output/MB_dist_matrix.png
+
+2.Travel time map to nearest station (southeastern Estonia)
+output/MB_travel_time_se.png
+
 ## Full report
 MB_fproj.pdf

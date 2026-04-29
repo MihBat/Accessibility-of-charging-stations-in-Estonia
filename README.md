@@ -1,10 +1,10 @@
 # Accessibility of EV charging stations in Estonia
 
-**University** University of Tartu
+**University:** University of Tartu
 
 **Author:** Mihhail Batura
 
-**Supervisors** PhD Alexander Kmoch, PhD Anto Aasa, PhD Holger Virro, MSc Pamela Maricela Guaman Pintado 
+**Supervisors:** PhD Alexander Kmoch, PhD Anto Aasa, PhD Holger Virro, MSc Pamela Maricela Guaman Pintado 
 
 ## Overview
 

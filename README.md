@@ -8,10 +8,26 @@
 
 ## Overview
 
-This project evaluates the accessibility of electric vehicle (EV) charging stations in Estonia using two spatial approaches:
+Electric vehicle adoption is growing, but the usability of EVs depends heavily on the accessibility of charging infrastructure. This project evaluates the spatial accessibility of charging stations in Estonia using two complementary methods:
 
 1. **Euclidean distance** to the nearest station (whole country)
 2. **Travel time** to the nearest station (southeastern Estonia), accounting for road network and rivers as barriers.
+
+## Methodology
+
+**Data sources**: OpenChargeMap, Estonian Land and Spatial Development Board, university course data
+
+**Distance matrix (whole Estonia):**  
+Calculates straight-line (Euclidean) distance from any point to the nearest of 167 charging stations.  
+*Tool: R (raster distance)*
+
+**Travel time (southeastern Estonia):**  
+A cost-distance analysis for 7 counties (Järva, Jõgeva, Tartu, Põlva, Võru, Valga, Viljandi).  
+- 55 charging stations within the study area  
+- Roads classified into 5 speed categories (main road: 90 km/h, street: 30 km/h, etc.)  
+- Rivers treated as barriers (speed multiplier 0.1)  
+- Algorithm: Dijkstra (MCP_Geometric)  
+*Tools: R (speed raster) + Python GeoPandas (shortest path)*
 
 ## Workflow
 
@@ -31,14 +47,20 @@ This project evaluates the accessibility of electric vehicle (EV) charging stati
 
 - **R**: `sf`, `terra`, `dplyr`, `ggplot2`, `ggspatial`
 - **Python**: `rasterio`, `numpy`, `skimage.graph`, `geopandas`
-- **Data sources**: OpenChargeMap, Estonian Land Board, university course data
 
 ## Results
 
 1. Distance map to nearest station (Estonia) - 
 output/MB_dist_matrix.png
+- Most stations are located in or near cities (Tallinn, Tartu, Pärnu)  
+- Ruhnu island is extremely remote (distance > 150 km from nearest station)
+
 2. Travel time map to nearest station (southeastern Estonia) - 
 output/MB_travel_time_se.png
+- Average travel time to nearest station ≤ 10 minutes under ideal conditions  
+- Rural areas (forests, swamps) without paved roads may face accessibility challenges
 
 ## Full report
 MB_fproj.pdf
+
+

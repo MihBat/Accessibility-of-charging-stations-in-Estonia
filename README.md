@@ -50,12 +50,12 @@ A cost-distance analysis for 7 counties (Järva, Jõgeva, Tartu, Põlva, Võru, 
 
 ## Results
 
-1. Distance map to nearest station (Estonia) - 
+1. **Distance map to nearest station (Estonia)** - 
 output/MB_dist_matrix.png
 - Most stations are located in or near cities (Tallinn, Tartu, Pärnu)  
 - Ruhnu island is extremely remote (distance > 150 km from nearest station)
 
-2. Travel time map to nearest station (southeastern Estonia) - 
+2. **Travel time map to nearest station (southeastern Estonia)** - 
 output/MB_travel_time_se.png
 - Average travel time to nearest station ≤ 10 minutes under ideal conditions  
 - Rural areas (forests, swamps) without paved roads may face accessibility challenges
@@ -63,4 +63,11 @@ output/MB_travel_time_se.png
 ## Full report
 MB_fproj.pdf
 
+## Run instructions
 
+1. Clone the repository or download as ZIP.
+2. **R**: Install required packages:
+install.packages(c("httr", "jsonlite", "sf", "dplyr", "terra", "sp", "raster", "tmap", "tidyverse", "ggplot2", "ggspatial"))
+3. **Python**: Install required packages:
+   ```bash
+   pip install -r requirements.txt

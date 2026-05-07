@@ -69,6 +69,7 @@ MB_fproj.pdf
 2. **R**: Install required packages:
 
 install.packages(c("httr", "jsonlite", "sf", "dplyr", "terra", "sp", "raster", "tmap", "tidyverse", "ggplot2", "ggspatial"))
+
 3. **Python**: Install required packages:
    ```bash
    pip install -r requirements.txt

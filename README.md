@@ -6,6 +6,22 @@
 
 **Supervisors:** PhD Alexander Kmoch, PhD Anto Aasa, PhD Holger Virro, MSc Pamela Maricela Guaman Pintado 
 
+## Skills demonstrated
+
+- GIS analysis
+- Spatial modelling
+- Raster processing
+- Cost-distance analysis
+- Dijkstra algorithm
+- Python
+- R
+
+## Output
+
+### Travel time to the nearest charging station
+
+![Travel time map](output/MB_travel_time_se.png)
+
 ## Overview
 
 Electric vehicle adoption is growing, but the usability of EVs depends heavily on the accessibility of charging infrastructure. This project evaluates the spatial accessibility of charging stations in Estonia using two complementary methods:
@@ -59,9 +75,6 @@ output/MB_dist_matrix.png
 output/MB_travel_time_se.png
 - Average travel time to nearest station ≤ 10 minutes under ideal conditions  
 - Rural areas (forests, swamps) without paved roads may face accessibility challenges
-
-## Full report
-MB_fproj.pdf
 
 ## Run instructions
 

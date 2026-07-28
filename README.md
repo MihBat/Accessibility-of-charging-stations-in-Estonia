@@ -16,7 +16,7 @@
 - Python
 - R
 
-## Output
+## Final output
 
 ### Travel time to the nearest charging station
 

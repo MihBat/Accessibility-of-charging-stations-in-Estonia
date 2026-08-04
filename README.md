@@ -16,18 +16,18 @@
 - Python
 - R
 
-## Final output
-
-### Travel time to the nearest charging station
-
-![Travel time map](output/MB_travel_time_se.png)
-
 ## Overview
 
 Electric vehicle adoption is growing, but the usability of EVs depends heavily on the accessibility of charging infrastructure. This project evaluates the spatial accessibility of charging stations in Estonia using two complementary methods:
 
 1. **Euclidean distance** to the nearest station (whole country)
 2. **Travel time** to the nearest station (southeastern Estonia), accounting for road network and rivers as barriers.
+
+## Final output
+
+### Travel time to the nearest charging station
+
+![Travel time map](output/MB_travel_time_se.png)
 
 ## Methodology
 

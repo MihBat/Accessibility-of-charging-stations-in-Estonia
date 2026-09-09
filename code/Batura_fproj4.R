@@ -98,23 +98,45 @@ tt_df$class <- factor(tt_df$class, levels = 1:6, labels = labels)
 
 # define a color palette for 6 classes
 travel_colors <- c(
-  "≤ 10" = "#1a9641",
-  "10–20" = "#a6d96a",
-  "20–30" = "#ffffbf",
-  "30–40" = "#fdae61",
-  "40–50" = "#d7191c",
-  "> 50" = "#800026"
+  "≤ 10"  = "#2b83ba", 
+  "10–20" = "#71b4d9", 
+  "20–30" = "#fee08b", 
+  "30–40" = "#fca636", 
+  "40–50" = "#f58220", 
+  "> 50"  = "#EE1C00"  
 )
 
 # design a map
 ggplot() +
+  
   geom_raster(data = tt_df, aes(x = x, y = y, fill = class)) +
   scale_fill_manual(
     name = "Travel time, min",
-    values = travel_colors
+    values = travel_colors,
+    guide = guide_legend(order = 3)  # set a position in legend, point might be first, lines - second, polygons/raster third
   ) +
-  geom_sf(data = roads_se, color = "grey20", size = 0.1, alpha = 1) +
-  geom_sf(data = stations_se, shape = 21, fill = "yellow", color = "black", size = 2) +
+  
+  
+  geom_sf(data = roads_se, 
+          aes(color = "Road network"),
+          size = 0.05, alpha = 1) +
+  scale_color_manual(
+    name = "", 
+    values = c("Road network" = "grey20"),
+    guide = guide_legend(order = 2)  
+  ) +
+  
+  
+  geom_sf(data = stations_se, 
+          aes(shape = "Charging station"),
+          fill = "yellow", color = "black", size = 2) +
+  scale_shape_manual(
+    name = "", 
+    values = c("Charging station" = 21),
+    guide = guide_legend(order = 1)  
+  ) +
+  
+  
   annotation_scale(location = "bl", width_hint = 0.2) +
   annotation_north_arrow(location = "tr", which_north = "true",
                          style = north_arrow_orienteering(text_size = 0)) +
@@ -129,11 +151,12 @@ ggplot() +
     plot.title = element_text(hjust = 0.5, color = "black"),
     plot.subtitle = element_text(hjust = 0, color = "black", size = 8),
     plot.caption = element_text(hjust = 1, color = "black", size = 8),
-    plot.background = element_rect(fill = "white"),              # Set the plot background to white
+    plot.background = element_rect(fill = "white"), # Set the plot background to white
     panel.background = element_rect(fill = "white"),
     legend.title = element_text(size = 8),
     legend.position = "right"
   )
+
 
 # Save the map as a PNG image
 ggsave("C:/PythonGIS/geopython2025/R_01/MB_travel_time_se.png", width = 8, height = 6, dpi = 300)

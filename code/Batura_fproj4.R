@@ -143,7 +143,9 @@ ggplot() +
   labs(
     title = "Charging station accessibility in southeastern Estonia",
     subtitle = "Source: OpenChargeMap, Estonian Landboard",
-    caption = "Author: Mihhail Batura"
+    caption = "Author: Mihhail Batura",
+    x = "", # delete extra labels from figure
+    y = ""
   ) +
   coord_sf() +
   theme_minimal(base_size = 12) +

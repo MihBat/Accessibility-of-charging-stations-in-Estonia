@@ -27,7 +27,7 @@ Electric vehicle adoption is growing, but the usability of EVs depends heavily o
 
 ### Travel time to the nearest charging station
 
-![Travel time map]()
+![Travel time map](output/MB_travel_time_SE.png)
 
 ## Methodology
 

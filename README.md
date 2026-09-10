@@ -56,8 +56,8 @@ A cost-distance analysis for 7 counties (Järva, Jõgeva, Tartu, Põlva, Võru, 
 3. **Travel time calculation (Geopandas)** – `code/Batura_fproj3.ipynb`  
    Cost‑distance analysis using Dijkstra's algorithm (`MCP_Geometric`).
 
-4. **Final map (R)** – `code/Batura_fproj4.R`  
-   Loads travel time raster, classifies, and produces the final map.
+4. **Final map (R/QGIS)** – `code/Batura_fproj4.R`  
+   Loads travel time raster, classifies, and produces the final map in QGIS.
 
 ## Technologies
 

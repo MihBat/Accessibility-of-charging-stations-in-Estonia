@@ -40,7 +40,7 @@ Calculates straight-line (Euclidean) distance from any point to the nearest of 1
 **Travel time (southeastern Estonia):**  
 A cost-distance analysis for 7 counties (Järva, Jõgeva, Tartu, Põlva, Võru, Valga, Viljandi).  
 - 55 charging stations within the study area  
-- Roads classified into 5 speed categories (main road: 90 km/h, street: 30 km/h, etc.)  
+- Roads classified into 5 speed categories (from main road - 90 km/h to street road - 30 km/h). The project does not take into account rural and forest roads.
 - Rivers treated as barriers (speed multiplier 0.1)  
 - Algorithm: Dijkstra (MCP_Geometric)  
 *Tools: R (speed raster) + Python GeoPandas (shortest path)*
